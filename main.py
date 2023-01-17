@@ -31,4 +31,4 @@ async def main(config):
 if __name__ == '__main__':
     with open("config.yml", 'r') as f:
         config = yaml.safe_load(f)
-        asyncio.get_event_loop().run_until_complete(main(config=config))
+        asyncio.run(main(config=config))
